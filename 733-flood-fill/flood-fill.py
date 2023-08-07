@@ -1,7 +1,6 @@
 class Solution:
     def floodFill(self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:
         visited = [ [False] * len(image[i]) for i in range(len(image))]
-        print(visited)
         queue = []
         queue.append((sr, sc))
         while queue:
