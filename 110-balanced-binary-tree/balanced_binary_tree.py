@@ -15,6 +15,7 @@ class Solution:
     def isBalancedHelper(self, root) -> tuple[int, bool]:
         if not root:
             return (-1, True)
+
         lHeight, lIsBalanced = self.isBalancedHelper(root.left)
         rHeight, rIsBalanced = self.isBalancedHelper(root.right)
 
