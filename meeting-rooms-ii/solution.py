@@ -9,8 +9,6 @@ class Interval(object):
 
 class Solution:
     def minMeetingRooms(self, intervals: List[Interval]) -> int:
-        # sweepline algo
-
         times = []
         for i in intervals:
             times.append((i.start, 1))
