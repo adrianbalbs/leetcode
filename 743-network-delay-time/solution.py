@@ -13,8 +13,7 @@ class Solution:
         processed = [False] * (n + 1)
         dist = [INF] * (n + 1)
         dist[k] = 0
-        pq = []
-        heapq.heappush(pq, (0, k))
+        pq = [(0, k)]
 
         while pq:
             _, v = heapq.heappop(pq)
