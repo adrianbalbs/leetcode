@@ -10,11 +10,11 @@ class Solution:
             for j in range(len(grid[i])):
                 if grid[i][j] == 0:
                     q.append((i, j))
-        dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         while q:
             row, col = q.popleft()
-            for i, j in dirs:
+            for i, j in directions:
                 r = row + i
                 c = col + j
                 if (
